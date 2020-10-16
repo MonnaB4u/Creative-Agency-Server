@@ -21,6 +21,10 @@ app.use(fileUpload());
 
 const port = 5000
 
+app.get('/', (req, res) =>{
+    res.send("working")
+})
+
 app.get('/', (req, res) => {
     res.send('hello')
 })
