@@ -75,7 +75,7 @@ client.connect(err => {
             res.send(documents)
         })
     })
-    
+
 ////////////////////////////////////////////////////////////////
 
 
@@ -98,4 +98,4 @@ client.connect(err => {
   
 });
 
-app.listen(port);
+app.listen(process.env.PORt || port);
